@@ -15,16 +15,17 @@ x = 10
 y = 2.25
 z = "I like turtles!"
 
-print("%s" % x)
-print("%s" % y)
-print("%s" % z)
+print("x is %d" % x)
+print("y is %.2f" % y)
+print("z is %s" % z)
 
 # Use the 'format' string method to print the same thing
 
 print("x is {}".format(x))
-print("{}".format(y))
+print("y is {:.2f}".format(y))
 print("{}".format(z))
 
+print("x is {}, y is {:.2f}, {}".format(x, y, z))
 # Finally, print the same thing using an f-string
 
 print(f"{x}")
