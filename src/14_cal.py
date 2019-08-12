@@ -22,3 +22,17 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+today = datetime.now()
+
+def user_input(): 
+  year_input = input("Please input a four digit year: ")
+  month_input = input("Please input a month: ")
+
+  if year_input == "":
+    year_input = today.year
+  if month_input == "":
+    month_input = today.month
+  print(f'{year_input} / {month_input}')
+
+user_input()

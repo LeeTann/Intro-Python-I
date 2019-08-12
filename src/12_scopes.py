@@ -5,6 +5,7 @@
 x = 12
 
 def changeX():
+    global x #explicit use of global 
     x = 99
 
 changeX()
@@ -19,6 +20,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y #explicit use of nonlocal for nested function
         y = 999
 
     inner()
